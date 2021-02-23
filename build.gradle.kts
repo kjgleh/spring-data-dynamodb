@@ -21,6 +21,9 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("io.github.boostchicken:spring-data-dynamodb:5.2.5")
+    implementation("com.amazonaws:aws-java-sdk-core:1.11.959")
+    testImplementation("org.testcontainers:localstack:1.15.2")
+    testImplementation("org.testcontainers:junit-jupiter:1.15.2")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
