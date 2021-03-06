@@ -4,7 +4,6 @@ cloud:
             accessKey: accessKey
             secretKey: secretKey
         region:
-            auto: false
             static: ap-northeast-2
         stack:
             auto: false

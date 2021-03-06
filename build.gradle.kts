@@ -22,6 +22,9 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 
+    // kotlinFixture
+    testImplementation("com.appmattus.fixture:fixture:1.1.0")
+
     // spring data dynamodb
     implementation("io.github.boostchicken:spring-data-dynamodb:5.2.5")
 
