@@ -7,12 +7,11 @@ import org.springframework.data.annotation.Id
 import java.util.*
 
 @DynamoDBTable(tableName = "order")
-class Order {
-
+class Order(
     @Id
     @DynamoDBHashKey
-    var id: String = UUID.randomUUID().toString()
+    var id: String = UUID.randomUUID().toString(),
 
     @DynamoDBAttribute
-    var amount: Long = 0L
-}
+    var amount: Int = 0
+)

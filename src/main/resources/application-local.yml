@@ -1,0 +1,8 @@
+spring:
+    data:
+        dynamodb:
+            entity2ddl:
+                auto: create
+                gsiProjectionType: ALL
+                readCapacity: 10
+                writeCapacity: 1
