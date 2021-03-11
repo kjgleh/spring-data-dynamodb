@@ -5,6 +5,7 @@ plugins {
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
     kotlin("jvm") version "1.4.21"
     kotlin("plugin.spring") version "1.4.21"
+    kotlin("plugin.noarg") version "1.4.21"
 }
 
 group = "me.kjgleh"
@@ -46,3 +47,7 @@ tasks.withType<KotlinCompile> {
 tasks.withType<Test> {
     useJUnitPlatform()
 }
+
+//noArg {
+//    annotation("com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable")
+//}
